@@ -74,13 +74,111 @@ public class SkeletonJava {
 
 
     /* here starts the main class */
-    public static void main(String[] arguments) {
-        int a = readIntGUI("Introduceti un numar:"); // input using GUI
-        printGUI("Ati introdus:" + a); // output using GUI
+    public static void main(String[] args) {
+        //int nr1 = readIntGUI("Nr1:");
+        //int nr2 = readIntGUI("Nr2:");
 
-        int b = readIntConsole("Introduceti alt numar:");  // input using console
-        printConsole("Ati introdus:" + b); // output using console
-    }
-    //end of main method
-}
+        //int media = (nr1 + nr2) / 2;
+
+        //printGUI(media);
+
+  /*      if (media <5)
+        printGUI("Corijent");
+
+        else
+            if(media==5)
+                printGUI("Ai trecut la limita!");
+
+            else
+                if(media==6)
+                    printGUI("Ai trecut clasa!");
+
+        else
+
+        printGUI("Ai trecut cu brio!"); */
+
+/*        //switch
+        switch(media) {
+
+            case 4 : printGUI("ai picat");break;
+            case 5 : printGUI("Esti ok");break;
+            case 6 : printGUI("Poti mai bine");break;
+            case 8 : printGUI("Bravo!");
+
+
+        }
+        }
+
+        }
+
+*/
+/*       int nr1;
+        int dublura;
+        do {
+            nr1=readIntGUI("Mai incearca");
+            dublura= 2*nr1;
+        printGUI(dublura);
+        }
+
+        while(dublura<=100);
+   */
+
+
+
+  /*      int[] noteMate={2,5,7,9};
+
+        int suma=0;
+                for(int i=0;i<noteMate.length;i++){
+
+            suma=suma+noteMate[i];
+
+                  System.out.println("pas:"+i+"suma"+suma);}
+
+                 */
+
+   /*     int []note=new int[3];
+        int suma=0;
+
+        for (int i=0;i<note.length;i++){
+
+            note[i]=readIntGUI("introduceti nota!");
+            suma+=note[i];}
+        int media=suma/note.length;
+            System.out.println("media e:"+media);
+
+        int max=note[0];
+
+        for(int i=1; i<note.length; i++){
+
+            if (note[i]>max)
+
+                max=note[i];
+        }
+
+        System.out.println("nota maxima e:"+ max);
+*/
+        int nr1;
+        int i=0;
+        int suma=0;
+        int media=0;
+
+        do{
+            nr1=readIntGUI("introdu numar");
+            suma= suma+nr1;
+            i++;
+        }
+
+        while(nr1 !=0);
+        media=suma/(i-1);
+
+        System.out.println("suma este:"+suma);
+        System.out.println("media este:" +media);
+        }
+
+
+              }
+
+
+        //end of main method
+
 // end of class
